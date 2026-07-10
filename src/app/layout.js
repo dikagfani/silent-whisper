@@ -1,6 +1,7 @@
 import { Yeseva_One } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const yesevaone = Yeseva_One({
   variable: "--font-yeseva",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
